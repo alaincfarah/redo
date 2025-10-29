@@ -1,0 +1,1 @@
+export default function PriseDeRdvEnLignePage() { return (<main className='container mx-auto px-6 py-16'><h1 className='text-4xl font-bold font-poppins text-primary text-center'>prise de rdv en ligne</h1><div className='mt-12 text-lg'><p>This is the page for &quot;prise de rdv en ligne&quot;.</p></div></main>); }

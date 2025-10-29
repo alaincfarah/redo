@@ -1,0 +1,1 @@
+export default function As2telTelesecretariatPage() { return (<main className='container mx-auto px-6 py-16'><h1 className='text-4xl font-bold font-poppins text-primary text-center'>as2tel telesecretariat</h1><div className='mt-12 text-lg'><p>This is the page for &quot;as2tel telesecretariat&quot;.</p></div></main>); }
