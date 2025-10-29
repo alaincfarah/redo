@@ -2,10 +2,14 @@ export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="text-center py-20 bg-gray-100">
-        <div className="container mx-auto px-6">
-          <h1 className="text-6xl font-bold font-poppins text-primary">VOS AMBASSADEURS AU TELEPHONE</h1>
-          <h2 className="text-4xl mt-4 font-semibold font-poppins text-text">NE PERDEZ PLUS UN APPEL TOUT EN MAITRISANT VOTRE IMAGE</h2>
+      <section
+        className="relative text-white text-center py-20 bg-cover bg-center"
+        style={{ backgroundImage: "url('/assets/images/hero-banner.jpg')" }}
+      >
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="relative container mx-auto px-6">
+          <h1 className="text-6xl font-bold font-poppins">VOS AMBASSADEURS AU TELEPHONE</h1>
+          <h2 className="text-4xl mt-4 font-semibold font-poppins">NE PERDEZ PLUS UN APPEL TOUT EN MAITRISANT VOTRE IMAGE</h2>
           <button className="mt-8 bg-accent text-white font-bold py-3 px-8 rounded-md hover:bg-primary transition-colors duration-300">
             TEST GRATUIT
           </button>
