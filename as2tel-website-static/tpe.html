@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>As2Tel - Télésecrétariat TPE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">As2Tel</a>
+            <nav class="nav-desktop">
+                <a href="index.html">Accueil</a>
+                <a href="a-propos.html">À propos</a>
+                <div class="dropdown">
+                    <button class="dropdown-btn">Services</button>
+                    <div class="dropdown-content">
+                        <a href="telesecretariat-medical.html">Télésecrétariat Médical</a>
+                        <a href="secretariat-juridique.html">Secrétariat Juridique</a>
+                        <a href="secretariat-agence-immobilier.html">Agence Immobilière</a>
+                        <a href="tpe.html">TPE</a>
+                    </div>
+                </div>
+                <a href="tarifs.html">Tarifs</a>
+                <a href="bureautique.html">Bureautique</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="header-contact">
+                <a href="tel:0123456789">01 23 45 67 89</a>
+                <a href="mailto:contact@as2tel.fr">contact@as2tel.fr</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+        <nav class="nav-mobile" id="nav-mobile">
+            <a href="index.html">Accueil</a>
+            <a href="a-propos.html">À propos</a>
+            <a href="telesecretariat-medical.html">Télésecrétariat Médical</a>
+            <a href="secretariat-juridique.html">Secrétariat Juridique</a>
+            <a href="secretariat-agence-immobilier.html">Agence Immobilière</a>
+            <a href="tpe.html">TPE</a>
+            <a href="tarifs.html">Tarifs</a>
+            <a href="bureautique.html">Bureautique</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Télésecrétariat TPE</h1>
+                <p>Le Télésecrétariat qui répond à vos besoins</p>
+            </div>
+        </section>
+
+        <section class="content-form-section">
+            <div class="container">
+                <div class="content-form-grid">
+                    <div class="content">
+                        <h2>Un service sur-mesure pour votre entreprise</h2>
+                        <p>Nos secrétaires répondront aux appels de vos correspondants en votre nom et selon vos consignes et instructions.</p>
+                        <h3>Vos avantages</h3>
+                        <ul>
+                            <li>30 jours d’essai gratuit</li>
+                            <li>Sans engagement</li>
+                            <li>Adaptation de nos secrétaires à vos instructions</li>
+                            <li>Monitoring en temps réel</li>
+                        </ul>
+                    </div>
+                    <div class="form-container">
+                        <h3>Contactez-nous</h3>
+                        <form id="tpe-form">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" required>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4" required></textarea>
+                            <button type="submit" class="cta-button">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>As2Tel</h3>
+                    <p>42 rue de Maubeuge<br>75009 Paris</p>
+                    <a href="mailto:contact@as2tel.fr">contact@as2tel.fr</a>
+                    <a href="tel:0123456789">01 23 45 67 89</a>
+                </div>
+                <div>
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="a-propos.html">À propos</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="tarifs.html">Tarifs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Newsletter</h3>
+                    <form>
+                        <input type="email" placeholder="Votre email">
+                        <button type="submit">Je m'abonne</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 As2Tel. Tous droits réservés. <a href="mentions-legales.html">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
