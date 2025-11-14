@@ -8,17 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        'primary': '#21a3a3',
-        'accent': '#f07c3e',
-        'background': '#ffffff',
-        'text': '#2d2d2d',
-        'footer-background': '#3a3a3a',
-        'footer-text': '#ffffff',
-      },
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-        roboto: ["Roboto", "sans-serif"],
+        sans: ["var(--font-roboto)", "sans-serif"],
+        heading: ["var(--font-poppins)", "sans-serif"],
+      },
+      colors: {
+        brand: {
+          primary: "#21a3a3",
+          accent: "#f07c3e",
+        },
       },
     },
   },

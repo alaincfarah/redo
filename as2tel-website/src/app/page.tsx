@@ -1,121 +1,104 @@
-export default function Home() {
+import Link from "next/link";
+
+export default function HomePage() {
   return (
-    <main>
+    <>
       {/* Hero Section */}
-      <section
-        className="relative text-white text-center py-20 bg-cover bg-center"
-        style={{ backgroundImage: "url('/assets/images/hero-banner.jpg')" }}
-      >
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="relative container mx-auto px-6">
-          <h1 className="text-6xl font-bold font-poppins">VOS AMBASSADEURS AU TELEPHONE</h1>
-          <h2 className="text-4xl mt-4 font-semibold font-poppins">NE PERDEZ PLUS UN APPEL TOUT EN MAITRISANT VOTRE IMAGE</h2>
-          <button className="mt-8 bg-accent text-white font-bold py-3 px-8 rounded-md hover:bg-primary transition-colors duration-300">
-            TEST GRATUIT
-          </button>
-        </div>
-      </section>
-
-      {/* Value Propositions Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-8 text-center">
-            <div className="p-4">
-              <h3 className="text-xl font-semibold font-poppins">Zero Engagement</h3>
-            </div>
-            <div className="p-4">
-              <h3 className="text-xl font-semibold font-poppins">30 jours Essai Gratuit</h3>
-            </div>
-            {/* Add other value props here */}
-            <div className="p-4">
-              <h3 className="text-xl font-semibold font-poppins">Service 24/7</h3>
-            </div>
-            <div className="p-4">
-              <h3 className="text-xl font-semibold font-poppins">Qualité Française</h3>
-            </div>
-             <div className="p-4">
-              <h3 className="text-xl font-semibold font-poppins">Agenda Partagé</h3>
-            </div>
-             <div className="p-4">
-              <h3 className="text-xl font-semibold font-poppins">Appels illimités</h3>
-            </div>
+      <section className="bg-gray-50 py-20">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-4xl md:text-6xl font-heading font-bold text-gray-800 mb-4">
+            VOS AMBASSADEURS AU TELEPHONE
+          </h1>
+          <p className="text-xl text-gray-600 mb-8">
+            NE PERDEZ PLUS UN APPEL TOUT EN MAITRISANT VOTRE IMAGE
+          </p>
+          <div className="flex justify-center space-x-4 mb-8">
+            <span className="bg-green-100 text-green-800 px-4 py-2 rounded-full">Zéro engagement</span>
+            <span className="bg-green-100 text-green-800 px-4 py-2 rounded-full">Zéro frais de dossier</span>
+            <span className="bg-green-100 text-green-800 px-4 py-2 rounded-full">55h/semaine</span>
+            <span className="bg-green-100 text-green-800 px-4 py-2 rounded-full">Satisfait ou remboursé</span>
           </div>
+          <Link href="/essai-gratuit" className="bg-brand-accent text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-brand-accent/90">
+            30 jours d’essai gratuit
+          </Link>
         </div>
       </section>
 
-      {/* Services by Sector Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-semibold text-center mb-12 font-poppins text-text">Nos solutions de télésecrétariat par secteur</h2>
+      {/* Services Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-heading font-bold text-center mb-12">Nos solutions pour chaque métier</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Card 1 */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="p-6">
-                <h4 className="text-2xl font-semibold font-poppins text-text">Petite Entreprise</h4>
-                <p className="mt-2 text-base">Ne laissez pas des clients potentiels sans réponses...</p>
-                <button className="mt-4 bg-primary text-white font-bold py-2 px-6 rounded-md hover:bg-accent transition-colors duration-300">
-                  En savoir +
-                </button>
-              </div>
+            {/* Service Item */}
+            <div className="bg-white rounded-lg shadow-md p-8 text-center">
+              <div className="bg-gray-200 h-48 w-full mb-6"></div>
+              <h3 className="text-xl font-bold mb-4">Petite entreprise</h3>
+              <p className="text-gray-600 mb-6">Gagnez en temps et en productivité avec un secrétariat externalisé.</p>
+              <Link href="/tpe" className="text-brand-primary font-bold">En savoir +</Link>
             </div>
-            {/* Card 2 */}
-             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="p-6">
-                <h4 className="text-2xl font-semibold font-poppins text-text">Médical</h4>
-                <p className="mt-2 text-base">Nos secrétaires médicales répondront à vos patients...</p>
-                <button className="mt-4 bg-primary text-white font-bold py-2 px-6 rounded-md hover:bg-accent transition-colors duration-300">
-                  En savoir +
-                </button>
-              </div>
+            {/* Service Item */}
+            <div className="bg-white rounded-lg shadow-md p-8 text-center">
+              <div className="bg-gray-200 h-48 w-full mb-6"></div>
+              <h3 className="text-xl font-bold mb-4">Médical</h3>
+              <p className="text-gray-600 mb-6">Restez concentré sur vos patients, nous gérons vos appels.</p>
+              <Link href="/telesecretariat-medical" className="text-brand-primary font-bold">En savoir +</Link>
             </div>
-             {/* Card 3 */}
-             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <div className="p-6">
-                <h4 className="text-2xl font-semibold font-poppins text-text">Profession Libérale</h4>
-                <p className="mt-2 text-base">Optimisez votre temps et restez concentré sur votre cœur de métier.</p>
-                <button className="mt-4 bg-primary text-white font-bold py-2 px-6 rounded-md hover:bg-accent transition-colors duration-300">
-                  En savoir +
-                </button>
-              </div>
+            {/* Service Item */}
+            <div className="bg-white rounded-lg shadow-md p-8 text-center">
+              <div className="bg-gray-200 h-48 w-full mb-6"></div>
+              <h3 className="text-xl font-bold mb-4">Profession libérale</h3>
+              <p className="text-gray-600 mb-6">Une permanence téléphonique pour ne manquer aucune opportunité.</p>
+              <Link href="/profession-liberale" className="text-brand-primary font-bold">En savoir +</Link>
             </div>
-            {/* ... repeat for other cards */}
+            {/* Service Item */}
+            <div className="bg-white rounded-lg shadow-md p-8 text-center">
+              <div className="bg-gray-200 h-48 w-full mb-6"></div>
+              <h3 className="text-xl font-bold mb-4">Agence immobilière</h3>
+              <p className="text-gray-600 mb-6">Ne laissez plus un prospect sans réponse.</p>
+              <Link href="/secretariat-agence-immobilier" className="text-brand-primary font-bold">En savoir +</Link>
+            </div>
+            {/* Service Item */}
+            <div className="bg-white rounded-lg shadow-md p-8 text-center">
+              <div className="bg-gray-200 h-48 w-full mb-6"></div>
+              <h3 className="text-xl font-bold mb-4">Professions juridiques</h3>
+              <p className="text-gray-600 mb-6">Un accueil téléphonique professionnel pour vos clients.</p>
+              <Link href="/secretariat-juridique" className="text-brand-primary font-bold">En savoir +</Link>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* How It Works Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl font-semibold mb-12 font-poppins text-text">Comment ça marche?</h2>
-          <div className="flex flex-col md:flex-row justify-center items-center gap-8">
-              {/* Steps would go here */}
-              <div className="text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">1.</div>
-                  <p className="font-semibold">Contactez-nous</p>
-              </div>
-               <div className="text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">2.</div>
-                  <p className="font-semibold">Personnalisez votre service</p>
-              </div>
-               <div className="text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">3.</div>
-                  <p className="font-semibold">Profitez de votre tranquilité</p>
-              </div>
+      {/* How it works Section */}
+      <section className="bg-gray-50 py-20">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-heading font-bold mb-12">Comment ça marche ?</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+            <div>
+              <h3 className="font-bold text-lg mb-2">1. Transfert d&apos;appels</h3>
+              <p>Vous transférez votre ligne vers un numéro unique que nous vous attribuons.</p>
+            </div>
+            <div>
+              <h3 className="font-bold text-lg mb-2">2. Nos secrétaires vous répondent</h3>
+              <p>Nos secrétaires répondent à vos correspondants en votre nom, selon vos instructions.</p>
+            </div>
+            <div>
+              <h3 className="font-bold text-lg mb-2">3. Recevez vos messages</h3>
+              <p>Vous recevez instantanément vos messages par email ou SMS.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Secondary CTA Section */}
-      <section className="py-20 bg-primary text-white text-center">
-          <div className="container mx-auto px-6">
-               <h2 className="text-4xl font-semibold font-poppins">Prêt à démarrer?</h2>
-               <p className="text-xl mt-4">Demandez votre devis gratuit ou commencez votre essai de 30 jours.</p>
-               <button className="mt-8 bg-accent text-white font-bold py-3 px-8 rounded-md hover:bg-white hover:text-accent transition-colors duration-300">
-                  Demander un devis
-              </button>
-          </div>
+      {/* CTA Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-heading font-bold mb-4">Prêt à nous tester ?</h2>
+          <p className="text-xl text-gray-600 mb-8">30 jours d&apos;essai gratuit, sans engagement.</p>
+          <Link href="/essai-gratuit" className="bg-brand-accent text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-brand-accent/90">
+            Démarrer l&apos;essai gratuit
+          </Link>
+        </div>
       </section>
-
-    </main>
+    </>
   );
 }

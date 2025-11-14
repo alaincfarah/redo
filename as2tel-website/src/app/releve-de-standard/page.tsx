@@ -1,1 +1,0 @@
-export default function ReleveDeStandardPage() { return (<main className='container mx-auto px-6 py-16'><h1 className='text-4xl font-bold font-poppins text-primary text-center'>releve de standard</h1><div className='mt-12 text-lg'><p>This is the page for &quot;releve de standard&quot;.</p></div></main>); }

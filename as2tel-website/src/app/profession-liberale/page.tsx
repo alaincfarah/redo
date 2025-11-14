@@ -1,7 +1,7 @@
-export default function ContactPage() {
+export default function ProfessionLiberalePage() {
   return (
     <div className="container mx-auto px-4 py-20 text-center">
-      <h1 className="text-4xl font-heading font-bold">Contact</h1>
+      <h1 className="text-4xl font-heading font-bold">Profession Libérale</h1>
       <p className="mt-4 text-lg text-gray-600">Cette page est en cours de construction.</p>
     </div>
   );
