@@ -20,18 +20,33 @@ a:hover {
     padding: 0 20px;
 }
 
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+}
+
 /* Header */
 .top-bar {
     background-color: #f9f9f9;
     padding: 10px 0;
-    text-align: right;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .client-login {
     margin-left: 20px;
 }
 
-.main-nav {
+.main-nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,6 +79,7 @@ a:hover {
 .hero h1 {
     font-size: 3.5em;
     margin-bottom: 20px;
+    color: white;
 }
 
 .cta-button {
@@ -73,6 +89,22 @@ a:hover {
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
+}
+
+/* Form Styles */
+form {
+    display: grid;
+    gap: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
 /* Footer */
